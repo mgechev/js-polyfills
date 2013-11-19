@@ -1,4 +1,4 @@
-#ES5 polyfill
+#JS Polyfills
 
 This repository contains implementations of few ES5 methods which I use on daily basis.
 
