@@ -44,3 +44,12 @@ if (typeof Array.prototype.map !== 'function') {
     return result;
   };
 }
+
+
+//Strings
+
+if (typeof String.prototype.trim !== 'function') {
+  String.prototype.trim = function () {
+    return this.replace(/(?:(?:^|\n)\s+|\s+(?:$|\n))/g,'').replace(/\s+/g,' ');
+  };
+}
