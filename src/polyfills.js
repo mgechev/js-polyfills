@@ -58,6 +58,16 @@ if (typeof Array.prototype.map !== 'function') {
   };
 }
 
+if (typeof Array.prototype.indexOf !== 'function') {
+  Array.prototype.indexOf = function (elem) {
+    for (var i = 0; i < this.length; i += 1) {
+      if (elem === this[i]) {
+        return elem;
+      }
+    }
+    return -1;
+  };
+}
 
 //Strings
 
